@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[364],{6892:(_,n,t)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/contact",function(){return t(8762)}])},8762:(_,n,t)=>{"use strict";t.r(n),t.d(n,{default:()=>c});var e=t(7876);let c=()=>(0,e.jsx)("div",{children:"Contact"})}},_=>{var n=n=>_(_.s=n);_.O(0,[636,593,792],()=>n(6892)),_N_E=_.O()}]);
