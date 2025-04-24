@@ -1,7 +1,10 @@
-/** @type {import('next').NextConfig} */
+const prefix = process.env.NODE_ENV === "production" ? "/livingwaters" : "";
+
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/livingwaters",
+  basePath: prefix,
+  assetPrefix: prefix,
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
