@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Banner = () => {
-  return <div>Welcome</div>;
+  return <h1>Welcome</h1>;
 };

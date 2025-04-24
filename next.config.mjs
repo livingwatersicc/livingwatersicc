@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/living-waters-church",
+  basePath: "/livingwaters",
 };
 
 export default nextConfig;
