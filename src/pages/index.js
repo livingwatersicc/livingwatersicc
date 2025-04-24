@@ -32,9 +32,7 @@ export default function Home() {
             <li>Save and see your changes instantly.</li>
           </ol>
 
-          <div className={styles.ctas}>
-            Hi from nextjs app for living waters
-          </div>
+          <div className={styles.ctas}>App for living waters</div>
         </main>
       </div>
     </>
