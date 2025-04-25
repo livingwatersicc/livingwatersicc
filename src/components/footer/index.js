@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./footer.module.scss";
 import Stack from "react-bootstrap/Stack";
-import { Container } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
 
 export const Footer = () => {
   return (

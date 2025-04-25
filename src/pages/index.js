@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <>
       <Banner />
+
       <Container>
         <Intro />
       </Container>
+
       <div className="bg-light">
         <Container>
           <Believes />

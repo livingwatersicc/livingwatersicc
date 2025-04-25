@@ -1,7 +1,7 @@
-import { Container } from "react-bootstrap";
+import { Title } from "components/typography";
 
 const Contact = () => {
-  return <Container>Contact</Container>;
+  return <Title>Contact us</Title>;
 };
 
 export default Contact;

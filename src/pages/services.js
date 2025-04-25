@@ -1,8 +1,15 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import { Title } from "components/typography";
+import { Content } from "scenes/services/content";
+import { List } from "scenes/services/list";
 
 const Services = () => {
-  return <Container>Services</Container>;
+  return (
+    <>
+      <Title>Services</Title>
+      <Content />
+      <List />
+    </>
+  );
 };
 
 export default Services;

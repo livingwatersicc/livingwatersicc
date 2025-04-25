@@ -1,4 +1,4 @@
-import React from "react";
+import { Subtitle } from "components/typography";
 
 const believes = [
   "The word of God is the supreme authority - above all traditions and any man's words. The Bible (66 books) is the inspired and infallible Word of God.",
@@ -13,7 +13,11 @@ const believes = [
 export const Believes = () => {
   return (
     <div className="pt-5 pb-5 ps-4 pe-5">
-      <div className="h2 text-center mb-4">What do we believe?</div>
+      <Subtitle className="text-center">What do we believe?</Subtitle>
+      <div className="text-center mb-4 small text-secondary">
+        Below is a summary of our beliefs. Please click here for our detailed
+        statement of faith.
+      </div>
       <ol>
         {believes.map((believe, idx) => (
           <li className="mb-3" key={idx}>

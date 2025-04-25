@@ -1,0 +1,23 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+.services {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 30px);
+    padding: 30px;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+}
