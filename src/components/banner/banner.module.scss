@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+
+  .image {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    padding: 0px 50px;
+
+    .text {
+      max-width: 800px;
+    }
+  }
+}

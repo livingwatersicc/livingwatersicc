@@ -1,5 +1,7 @@
+import { Container } from "react-bootstrap";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return <Container>Contact</Container>;
 };
 
 export default Contact;

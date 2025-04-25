@@ -2,8 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import styles from "./nav.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 const menu = [
   {
     text: "Home",
@@ -24,8 +25,10 @@ const menu = [
 ];
 
 export const NavMenu = () => {
+  const { pathname } = useRouter();
+
   return (
-    <Navbar collapseOnSelect expand="lg" bg="ligth" variant="ligth">
+    <Navbar collapseOnSelect expand="md">
       <Container>
         <Navbar.Brand href="#home">Living waters</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -33,10 +36,15 @@ export const NavMenu = () => {
           id="responsive-navbar-nav"
           className="justify-content-end"
         >
-          <Nav>
-            {menu.map((item, index) => (
-              <Nav.Link as={Link} key={index} href={item.link}>
-                {item.text}
+          <Nav variant="">
+            {menu?.map(({ link, text }, index) => (
+              <Nav.Link
+                active={pathname === link}
+                as={Link}
+                key={index}
+                href={link}
+              >
+                {text}
               </Nav.Link>
             ))}
           </Nav>
