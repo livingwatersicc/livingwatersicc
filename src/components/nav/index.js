@@ -39,7 +39,7 @@ export const NavMenu = () => {
             {menu?.map(({ link, text }, index) => (
               <Nav.Link
                 active={pathname === link}
-                as={"a"}
+                as={Link}
                 key={index}
                 href={link}
               >
