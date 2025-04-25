@@ -59,7 +59,6 @@
 .ctas {
   display: flex;
   gap: 16px;
-  color: yellow;
 }
 
 .ctas a {
