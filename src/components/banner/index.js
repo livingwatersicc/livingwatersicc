@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
-import styles from "./banner.module.scss";
 import { Image } from "react-bootstrap";
+
+import styles from "./banner.module.scss";
 
 export const Banner = () => {
   return (
