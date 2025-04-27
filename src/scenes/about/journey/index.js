@@ -1,9 +1,9 @@
 import { Word } from "components/verse";
-import Container from "react-bootstrap/Container";
+import { Wrapper } from "components/wrapper";
 
 export const Journey = () => {
   return (
-    <Container className="p-5">
+    <Wrapper>
       <Word verse={"Matt 18:20, NIV"}>
         Jesus said “For where two or three gather in my name, there am I with
         them.”
@@ -30,6 +30,6 @@ export const Journey = () => {
         communities. These retreats played a significant role in the spiritual
         growth of the believers.
       </p>
-    </Container>
+    </Wrapper>
   );
 };

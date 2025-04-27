@@ -1,9 +1,9 @@
 import { Word } from "components/verse";
-import Container from "react-bootstrap/Container";
+import { Wrapper } from "components/wrapper";
 
 export const Vision = () => {
   return (
-    <Container className="p-5">
+    <Wrapper>
       <Word verse={"Isaiah 61:4"}>
         They will rebuild the ancient ruins and restore the places long
         devastated; they will renew the ruined cities that have been devastated
@@ -23,6 +23,6 @@ export const Vision = () => {
         Our vision is not just to fill the seats in church, but to fill God's
         kingdom with lives transformed by the love and grace of God!
       </p>
-    </Container>
+    </Wrapper>
   );
 };

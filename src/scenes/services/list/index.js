@@ -1,13 +1,18 @@
-import Container from "react-bootstrap/Container";
 import styles from "./list.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faChildren,
   faChurch,
   faClock,
+  faHandHoldingHeart,
+  faHandsHolding,
+  faHandsPraying,
+  faHeart,
   faMapLocation,
   faPlaceOfWorship,
 } from "@fortawesome/free-solid-svg-icons";
-import { icon } from "@fortawesome/fontawesome-svg-core";
+import { Wrapper } from "components/wrapper";
+import { Heading } from "components/typography";
 
 const services = [
   {
@@ -16,6 +21,10 @@ const services = [
     timing: "Sundays 5.00 pm to 6.45 pm",
     location: "Church of Christ building (1 St Andrews Street, Dunedin)",
     icon: faChurch,
+    subIcon: {
+      icon: faHandsPraying,
+      transform: { x: 5, y: 15 },
+    },
   },
   {
     title: "Youth fellowship",
@@ -23,6 +32,10 @@ const services = [
     timing: "Fridays 5.00 pm to 6.30 pm",
     location: "Church of Christ building (1 St Andrews Street, Dunedin)",
     icon: faChurch,
+    subIcon: {
+      icon: faChildren,
+      transform: { x: 5, y: 13 },
+    },
   },
   {
     title: "Women's fellowship",
@@ -30,6 +43,11 @@ const services = [
     timing: "Saturdays 4.00 pm to 6.00 pm",
     location: "contact info.lwicc@gmail.com for venue information",
     icon: faPlaceOfWorship,
+    subIcon: {
+      icon: faHandsHolding,
+      size: "2x",
+      transform: { x: 6, y: 13 },
+    },
   },
   {
     title: "Intercessory prayers",
@@ -37,17 +55,36 @@ const services = [
     timing: "On a weekday which moves around houses",
     location: "contact info.lwicc@gmail.com for venue information",
     icon: faPlaceOfWorship,
+    subIcon: {
+      icon: faHandHoldingHeart,
+      transform: { x: 6, y: 10 },
+    },
   },
 ];
 
-export const List = () => {
+export const List = ({ showHEading = false }) => {
   return (
-    <Container className="p-5">
+    <Wrapper>
+      {showHEading && (
+        <Heading className="text-center mb-5 mt-0">Services</Heading>
+      )}
       <div className={styles.services}>
         {services.map((service, idx) => (
           <div key={idx} className={styles.service}>
             <div className={styles.image}>
-              <FontAwesomeIcon color="#268dbc" icon={service.icon} size="3x" />
+              <span class="fa-layers fa-fw">
+                <FontAwesomeIcon
+                  color="#cda04b"
+                  icon={service.icon}
+                  size="3x"
+                />
+                <FontAwesomeIcon
+                  size="2x"
+                  icon={faHeart}
+                  color="#a9372a"
+                  {...service.subIcon}
+                />
+              </span>
             </div>
             <div className={styles.text}>
               <figure className="m-0">
@@ -78,6 +115,6 @@ export const List = () => {
           </div>
         ))}
       </div>
-    </Container>
+    </Wrapper>
   );
 };

@@ -5,10 +5,10 @@ const LeadMinister = () => {
   return (
     <>
       <Banner
-        image={"minister.jpg"}
+        image={"bible.jpg"}
         title={"Lead minister"}
         isResponsive
-        position="center"
+        position="top"
       />
       <Minister />
     </>

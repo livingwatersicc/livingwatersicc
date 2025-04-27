@@ -1,4 +1,4 @@
-import { Subtitle } from "components/typography";
+import { Heading } from "components/typography";
 
 const believes = [
   "The word of God is the supreme authority - above all traditions and any man's words. The Bible (66 books) is the inspired and infallible Word of God.",
@@ -12,11 +12,12 @@ const believes = [
 ];
 export const Believes = () => {
   return (
-    <div className="pt-5 pb-5 ps-4 pe-5">
-      <Subtitle className="text-center">What do we believe?</Subtitle>
+    <>
+      <Heading className="text-center">What do we believe?</Heading>
       <div className="text-center mb-4 small text-secondary">
-        Below is a summary of our beliefs. Please click here for our detailed
-        statement of faith.
+        Below is a summary of our beliefs. Please click{" "}
+        <a href="/statement-of-faith">here</a> for our detailed statement of
+        faith.
       </div>
       <ol>
         {believes.map((believe, idx) => (
@@ -25,6 +26,6 @@ export const Believes = () => {
           </li>
         ))}
       </ol>
-    </div>
+    </>
   );
 };

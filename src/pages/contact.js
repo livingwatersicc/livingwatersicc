@@ -1,14 +1,14 @@
 import { Banner } from "components/banner";
 import { Map } from "components/map";
-import { Container } from "react-bootstrap";
+import { Wrapper } from "components/wrapper";
 
 const Contact = () => {
   return (
     <>
       <Banner image={"water-church.jpg"} title={"Contact us"} isResponsive />
-      <Container>
+      <Wrapper className="">
         <Map />
-      </Container>
+      </Wrapper>
     </>
   );
 };

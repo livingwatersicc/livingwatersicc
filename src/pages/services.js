@@ -1,5 +1,4 @@
 import { Banner } from "components/banner";
-import { Title } from "components/typography";
 import { Content } from "scenes/services/content";
 import { List } from "scenes/services/list";
 

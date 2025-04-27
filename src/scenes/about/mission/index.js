@@ -1,9 +1,9 @@
 import { Word } from "components/verse";
-import Container from "react-bootstrap/Container";
+import { Wrapper } from "components/wrapper";
 
 export const Mission = () => {
   return (
-    <Container className="p-5">
+    <Wrapper>
       <p>
         The Lord says in Jeremiah 2: 13, My people have committed two sins: They
         have forsaken me, the spring of living water, and have dug their own
@@ -41,6 +41,6 @@ export const Mission = () => {
         8:32), bringing freedom to every area of our lives in accordance with
         His divine purpose.
       </p>
-    </Container>
+    </Wrapper>
   );
 };

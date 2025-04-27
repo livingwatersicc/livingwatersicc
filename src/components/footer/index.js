@@ -1,14 +1,13 @@
 import styles from "./footer.module.scss";
-import Stack from "react-bootstrap/Stack";
-import Container from "react-bootstrap/Container";
+import { Wrapper } from "components/wrapper";
 
 export const Footer = () => {
   return (
-    <Container className="ps-5 pe-5">
+    <Wrapper>
       <div className={styles.footer}>
         Copyright © {new Date().getFullYear()} Living Waters International
         Christian Christ®. All rights reserved.
       </div>
-    </Container>
+    </Wrapper>
   );
 };

@@ -18,6 +18,7 @@ const menu = [
       { text: "Our mission", link: "/mission" },
       { text: "Our vision", link: "/vision" },
       { text: "Lead minister", link: "/lead-minister" },
+      { text: "Statement of faith ", link: "/statement-of-faith" },
     ],
   },
   {

@@ -1,11 +1,9 @@
-import { Subtitle } from "components/typography";
-import { Word } from "components/verse";
+import { Wrapper } from "components/wrapper";
 import { Image } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
 
 export const Minister = () => {
   return (
-    <Container className="p-5">
+    <Wrapper>
       <p>
         Prasath is the lead minister of the Living Waters church. Prasath was
         born in a small town Vellore, in southern India and moved to New Zealand
@@ -49,6 +47,6 @@ export const Minister = () => {
         and youth ministry of the church.
       </p>
       <p>Supporting elders and their family</p>
-    </Container>
+    </Wrapper>
   );
 };

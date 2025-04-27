@@ -1,6 +1,5 @@
 import { Banner } from "components/banner";
-import { Subtitle } from "components/typography";
-import Container from "react-bootstrap/Container";
+import { Wrapper } from "components/wrapper";
 import { Believes } from "scenes/home/believes";
 import { Intro } from "scenes/home/content";
 import { List } from "scenes/services/list";
@@ -16,19 +15,15 @@ export default function Home() {
             take the free gift of the water of life.`}
       />
 
-      <Container>
+      <Wrapper>
         <Intro />
-      </Container>
+      </Wrapper>
 
-      <div className="bg-light">
-        <Container>
-          <Believes />
-        </Container>
-      </div>
-      <Container className="p-5 pb-1 text-center">
-        <Subtitle>Services</Subtitle>
-      </Container>
-      <List />
+      <Wrapper isGrayBg>
+        <Believes />
+      </Wrapper>
+
+      <List showHEading />
     </>
   );
 }

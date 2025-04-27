@@ -1,6 +1,6 @@
 export const Intro = () => {
   return (
-    <div className="p-5">
+    <div>
       <p>
         Welcome to the Living Waters community! We are glad you are here and we
         wish you grace and peace in the name of our Lord and Saviour{" "}
