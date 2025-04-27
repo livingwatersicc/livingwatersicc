@@ -12,8 +12,8 @@ const Services = () => {
         isResponsive
         position="center"
       />
-      <Content />
       <List />
+      <Content />
     </>
   );
 };
