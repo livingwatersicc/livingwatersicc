@@ -1,4 +1,5 @@
 import { Image } from "react-bootstrap";
+import { motion } from "motion/react";
 
 import styles from "./banner.module.scss";
 
@@ -22,8 +23,14 @@ export const Banner = ({
       />
       <div className={styles.content}>
         <div className={styles.text}>
-          <div className={"display-5 mb-3"}>{title}</div>
-          {subtitle && <div className={"lead"}>{subtitle}</div>}
+          <motion.section
+            initial={{ transform: "translateY(200px)" }}
+            animate={{ transform: "translateY(0px)" }}
+            transition={{ type: "spring" }}
+          >
+            <div className={"display-5 mb-3"}>{title}</div>
+            {subtitle && <div className={"lead"}>{subtitle}</div>}
+          </motion.section>
         </div>
       </div>
     </div>
