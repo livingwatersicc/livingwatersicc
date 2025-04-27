@@ -1,7 +1,10 @@
+import { Banner } from "components/banner";
 import { Title } from "components/typography";
 
 const Contact = () => {
-  return <Title>Contact us</Title>;
+  return (
+    <Banner image={"water-church.jpg"} title={"Contact us"} isResponsive />
+  );
 };
 
 export default Contact;

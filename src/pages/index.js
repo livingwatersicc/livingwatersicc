@@ -8,7 +8,13 @@ import { List } from "scenes/services/list";
 export default function Home() {
   return (
     <>
-      <Banner />
+      <Banner
+        image={"sea.jpg"}
+        title={"Revelation 22:17"}
+        subtitle={`The Spirit and the bride say, “Come!” And let the one who hears say,
+            “Come!” Let the one who is thirsty come; and let the one who wishes
+            take the free gift of the water of life.`}
+      />
 
       <Container>
         <Intro />

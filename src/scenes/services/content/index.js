@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 export const Content = () => {
   return (
     <>
-      <Container className="p-5 pb-2">
+      <Container className="p-5">
         <Subtitle>What to expect in a Sunday service?</Subtitle>
         <p>
           Our service typically includes Praise and Worship, Intercessory

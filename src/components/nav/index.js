@@ -2,17 +2,16 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useRouter } from "next/router";
-import Image from "react-bootstrap/Image";
-import styles from "./nav.module.scss";
 import { Logo } from "components/logo";
+
 const menu = [
   {
     text: "Home",
     link: "/",
   },
   {
-    text: "About us",
-    link: "/about-us",
+    text: "About",
+    link: "/about",
   },
   {
     text: "Services",
@@ -30,7 +29,7 @@ export const NavMenu = () => {
   return (
     <Navbar collapseOnSelect expand="md" className="border-bottom">
       <Container>
-        <Navbar.Brand>
+        <Navbar.Brand href="/">
           <Logo />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
