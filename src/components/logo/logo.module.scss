@@ -6,15 +6,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #07476d;
-    font-weight: 500;
+    color: $dark-blue;
 
     .first {
-      font-size: 33px;
-      line-height: 1.3em;
+      font-size: 30px;
+      line-height: 1.1em;
+      font-weight: 500;
     }
     .second {
-      font-size: 15px;
+      font-size: 14px;
+      font-weight: 500;
     }
   }
 }
