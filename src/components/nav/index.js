@@ -30,16 +30,6 @@ const menu = [
   },
 ];
 
-const NavLink = ({ link, children }) => {
-  const { pathname } = useRouter();
-
-  return (
-    <Nav.Link active={pathname === link} as={"a"} href={link}>
-      {children}
-    </Nav.Link>
-  );
-};
-
 export const NavMenu = () => {
   const { pathname } = useRouter();
   return (
