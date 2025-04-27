@@ -1,11 +1,9 @@
-import { Subtitle } from "components/typography";
 import { Word } from "components/verse";
 import Container from "react-bootstrap/Container";
 
 export const Journey = () => {
   return (
     <Container className="p-5">
-      <Subtitle>Our journey</Subtitle>
       <Word verse={"Matt 18:20, NIV"}>
         Jesus said “For where two or three gather in my name, there am I with
         them.”

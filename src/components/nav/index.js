@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useRouter } from "next/router";
 import { Logo } from "components/logo";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 const menu = [
   {
@@ -12,6 +13,12 @@ const menu = [
   {
     text: "About",
     link: "/about",
+    items: [
+      { text: "Our Journey", link: "/journey" },
+      { text: "Our mission", link: "/mission" },
+      { text: "Our vision", link: "/vision" },
+      { text: "Lead minister", link: "/lead-minister" },
+    ],
   },
   {
     text: "Services",
@@ -23,9 +30,18 @@ const menu = [
   },
 ];
 
-export const NavMenu = () => {
+const NavLink = ({ link, children }) => {
   const { pathname } = useRouter();
 
+  return (
+    <Nav.Link active={pathname === link} as={"a"} href={link}>
+      {children}
+    </Nav.Link>
+  );
+};
+
+export const NavMenu = () => {
+  const { pathname } = useRouter();
   return (
     <Navbar collapseOnSelect expand="md" className="border-bottom">
       <Container>
@@ -38,16 +54,37 @@ export const NavMenu = () => {
           className="justify-content-end"
         >
           <Nav variant="">
-            {menu?.map(({ link, text }, index) => (
-              <Nav.Link
-                active={pathname === link}
-                as={"a"}
-                key={index}
-                href={link}
-              >
-                {text}
-              </Nav.Link>
-            ))}
+            {menu?.map(({ link, text, items = [] }, index) => {
+              const isActive =
+                link === pathname ||
+                (items.length && items.some((i) => i.link === pathname));
+
+              if (items.length) {
+                return (
+                  <NavDropdown
+                    key={index}
+                    title={text}
+                    id="basic-nav-dropdown"
+                    active={isActive}
+                  >
+                    {items.map((i, idx) => (
+                      <NavDropdown.Item
+                        key={idx}
+                        href={i.link}
+                        active={i.link === pathname}
+                      >
+                        {i.text}
+                      </NavDropdown.Item>
+                    ))}
+                  </NavDropdown>
+                );
+              }
+              return (
+                <Nav.Link active={isActive} as={"a"} key={index} href={link}>
+                  {text}
+                </Nav.Link>
+              );
+            })}
           </Nav>
         </Navbar.Collapse>
       </Container>

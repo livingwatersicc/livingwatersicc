@@ -1,12 +1,9 @@
-import { Subtitle } from "components/typography";
 import { Word } from "components/verse";
 import Container from "react-bootstrap/Container";
 
 export const Vision = () => {
   return (
     <Container className="p-5">
-      <Subtitle>Our Vision</Subtitle>
-
       <Word verse={"Isaiah 61:4"}>
         They will rebuild the ancient ruins and restore the places long
         devastated; they will renew the ruined cities that have been devastated

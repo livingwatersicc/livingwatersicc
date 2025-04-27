@@ -1,9 +1,15 @@
 import { Banner } from "components/banner";
-import { Title } from "components/typography";
+import { Map } from "components/map";
+import { Container } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <Banner image={"water-church.jpg"} title={"Contact us"} isResponsive />
+    <>
+      <Banner image={"water-church.jpg"} title={"Contact us"} isResponsive />
+      <Container>
+        <Map />
+      </Container>
+    </>
   );
 };
 
