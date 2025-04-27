@@ -24,7 +24,7 @@ export const Banner = ({
       <div className={styles.content}>
         <div className={styles.text}>
           <motion.section
-            initial={{ transform: "translateY(200px)" }}
+            initial={{ transform: "translateY(100px)" }}
             animate={{ transform: "translateY(0px)" }}
             transition={{ type: "spring" }}
           >
