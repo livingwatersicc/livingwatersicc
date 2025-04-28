@@ -18,7 +18,7 @@ const services = [
   {
     title: "Sunday service",
     frequency: "Weekly",
-    timing: "Sundays 5.00 pm to 6.45 pm",
+    timing: "Sundays 5.00 PM to 6.45 PM",
     location: "Church of Christ building (1 Saint Andrews Street, Dunedin)",
     icon: faChurch,
     subIcon: {
@@ -29,7 +29,7 @@ const services = [
   {
     title: "Youth fellowship",
     frequency: "Fortnightly",
-    timing: "Fridays 5.00 pm to 6.30 pm",
+    timing: "Fridays 5.00 PM to 6.30 PM",
     location: "Church of Christ building (1 Saint Andrews Street, Dunedin)",
     icon: faChurch,
     subIcon: {
@@ -40,7 +40,7 @@ const services = [
   {
     title: "Women's fellowship",
     frequency: "Fortnightly",
-    timing: "Saturdays 4.00 pm to 6.00 pm",
+    timing: "Saturdays 4.00 PM to 6.00 PM",
     location: "contact info.lwicc@gmail.com for venue information",
     icon: faPlaceOfWorship,
     subIcon: {

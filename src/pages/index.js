@@ -2,10 +2,10 @@ import { faClockFour } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Banner } from "components/banner";
 import { Wrapper } from "components/wrapper";
+import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import { Believes } from "scenes/home/believes";
 import { Intro } from "scenes/home/content";
-import { List } from "scenes/services/list";
 
 export default function Home() {
   return (
@@ -22,23 +22,26 @@ export default function Home() {
         <Intro />
       </Wrapper>
 
-      <Wrapper isGrayBg>
-        <Believes />
-      </Wrapper>
-
       <Wrapper bg="bg-warning">
         <Stack className="text-center">
           <div className="display-6">
             See you soon! Join us for our Sunday service
           </div>
           <div className="fw-light">
-            <FontAwesomeIcon icon={faClockFour} /> 5:00 PM – 7:00 PM at Church
+            <FontAwesomeIcon icon={faClockFour} /> 5:00 PM – 6:45 PM at Church
             of Christ building (1 Saint Andrew Street Dunedin)
+          </div>
+          <div className="mt-3">
+            <Button as="a" href="/services" variant="outline-dark">
+              Services
+            </Button>
           </div>
         </Stack>
       </Wrapper>
 
-      <List showHEading />
+      <Wrapper isGrayBg>
+        <Believes />
+      </Wrapper>
     </>
   );
 }
