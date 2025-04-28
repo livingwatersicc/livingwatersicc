@@ -30,14 +30,14 @@ export const Minister = () => {
         upon request.
       </p>
 
-      <figure class="figure">
+      <figure className="figure">
         <Image
           src="minister1.png"
           className="w-75"
           rounded
           alt="Lead minister"
         />
-        <figcaption class="figure-caption">
+        <figcaption className="figure-caption">
           Prasath is married to Leema and they have three school-age children
           Adrian, Austin and Salomi.
         </figcaption>

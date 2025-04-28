@@ -34,7 +34,12 @@ const menu = [
 export const NavMenu = () => {
   const { pathname } = useRouter();
   return (
-    <Navbar collapseOnSelect expand="md" className="border-bottom">
+    <Navbar
+      collapseOnSelect
+      expand="md"
+      sticky="top"
+      className="bg-light border-bottom"
+    >
       <Container>
         <Navbar.Brand href="/">
           <Logo />

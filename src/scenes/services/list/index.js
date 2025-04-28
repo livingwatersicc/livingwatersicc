@@ -72,16 +72,16 @@ export const List = ({ showHEading = false }) => {
         {services.map((service, idx) => (
           <div key={idx} className={styles.service}>
             <div className={styles.image}>
-              <span class="fa-layers fa-fw">
+              <span className="fa-layers fa-fw">
                 <FontAwesomeIcon
-                  color="#cda04b"
+                  className="text-warning"
                   icon={service.icon}
                   size="3x"
                 />
                 <FontAwesomeIcon
                   size="2x"
                   icon={faHeart}
-                  color="#a9372a"
+                  className="text-danger"
                   {...service.subIcon}
                 />
               </span>
@@ -91,7 +91,7 @@ export const List = ({ showHEading = false }) => {
                 <blockquote className="blockquote">
                   <p>{service.title}</p>
                 </blockquote>
-                <figcaption class="blockquote-footer mb-0">
+                <figcaption className="blockquote-footer mb-0">
                   {service.frequency}
                 </figcaption>
               </figure>

@@ -1,0 +1,31 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+.container {
+  display: flex;
+  gap: 50px;
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    min-height: 300px;
+    align-items: center;
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+    }
+  }
+
+  .map {
+    flex: 1;
+  }
+}

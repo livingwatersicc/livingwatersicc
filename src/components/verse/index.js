@@ -4,7 +4,7 @@ export const Word = ({ children, verse }) => {
       <blockquote className="">
         <p>{children}</p>
       </blockquote>
-      <figcaption class="blockquote-footer">{verse}</figcaption>
+      <figcaption className="blockquote-footer">{verse}</figcaption>
     </figure>
   );
 };
