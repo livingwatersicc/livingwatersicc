@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bootstrap";
 import { Word } from "components/verse";
+import Obfuscate from 'react-obfuscate';
 
 export const ContactMap = () => {
   return (
@@ -22,24 +23,26 @@ export const ContactMap = () => {
             “Ask and it will be given to you; seek and you will find; knock and
             the door will be opened to you.
           </Word>
-          <div className="h5 text-primary">
+          <div className="lead text-primary">
             Living Waters International Christian Church
           </div>
           <div>
-            <FontAwesomeIcon icon={faMapMarker} className="me-2" />
-            Church of Christ building, 1 Saint Andrew Street Dunedin.
+            <FontAwesomeIcon icon={faMapMarker} /> Church of Christ building, 1
+            Saint Andrew Street Dunedin.
           </div>
           <div>
-            <FontAwesomeIcon icon={faEnvelope} className="me-2" />
-            info.lwicc@gmail.com
+            <FontAwesomeIcon icon={faEnvelope} /> info.lwicc@gmail.com
           </div>
-          <div>
-            <FontAwesomeIcon icon={faPhone} className="me-2" />
-            +64 012 345 6789
+          <div> 
+            <FontAwesomeIcon icon={faPhone} /> +64 012 345 6789
           </div>
           <div className={"mt-3"}>
             <p>For Enquires or plane a visit, please email us.</p>
-            <Button as={"a"} href="mailto:info.lwicc@gmail.com">
+            <Button
+              variant="outline-primary"
+              as={Obfuscate}
+              email="mailto:info.lwicc@gmail.com"
+            >
               Email
             </Button>
           </div>
