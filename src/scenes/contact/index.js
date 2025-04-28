@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bootstrap";
 import { Word } from "components/verse";
-import Obfuscate from 'react-obfuscate';
+import Obfuscate from "react-obfuscate";
 
 export const ContactMap = () => {
   return (
@@ -33,11 +33,11 @@ export const ContactMap = () => {
           <div>
             <FontAwesomeIcon icon={faEnvelope} /> info.lwicc@gmail.com
           </div>
-          <div> 
+          <div>
             <FontAwesomeIcon icon={faPhone} /> +64 012 345 6789
           </div>
           <div className={"mt-3"}>
-            <p>For Enquires or plane a visit, please email us.</p>
+            <p>For Enquires or plan a visit, please email us.</p>
             <Button
               variant="outline-primary"
               as={Obfuscate}

@@ -54,7 +54,7 @@ export const Footer = () => {
       </div>
       <div className="small text-light text-center pt-3 border-top mt-3">
         Copyright © {new Date().getFullYear()} Living Waters International
-        Christian Christ. All rights reserved.
+        Christian Church. All rights reserved.
       </div>
     </Wrapper>
   );
