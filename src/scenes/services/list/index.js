@@ -23,7 +23,7 @@ const services = [
     icon: faChurch,
     subIcon: {
       icon: faHandsPraying,
-      transform: { x: 5, y: 15 },
+      transform: { x: 10, y: 15 },
     },
   },
   {
@@ -34,7 +34,7 @@ const services = [
     icon: faChurch,
     subIcon: {
       icon: faChildren,
-      transform: { x: 5, y: 13 },
+      transform: { x: 10, y: 13 },
     },
   },
   {
@@ -45,8 +45,7 @@ const services = [
     icon: faPlaceOfWorship,
     subIcon: {
       icon: faHandsHolding,
-      size: "2x",
-      transform: { x: 6, y: 13 },
+      transform: { x: 10, y: 13 },
     },
   },
   {
@@ -57,7 +56,7 @@ const services = [
     icon: faPlaceOfWorship,
     subIcon: {
       icon: faHandHoldingHeart,
-      transform: { x: 6, y: 10 },
+      transform: { x: 10, y: 10 },
     },
   },
 ];
@@ -76,10 +75,9 @@ export const List = ({ showHEading = false }) => {
                 <FontAwesomeIcon
                   className="text-warning"
                   icon={service.icon}
-                  size="3x"
+                  size="2x"
                 />
                 <FontAwesomeIcon
-                  size="2x"
                   icon={faHeart}
                   className="text-danger"
                   {...service.subIcon}

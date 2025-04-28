@@ -16,11 +16,12 @@
     gap: 20px;
     justify-content: space-between;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
 
     .image {
+      position: absolute;
+      right: 35px;
       display: flex;
-      width: 100%;
-      min-height: 80px;
       height: auto;
       align-items: center;
 

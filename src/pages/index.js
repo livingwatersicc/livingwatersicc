@@ -29,7 +29,7 @@ export default function Home() {
       <Wrapper bg="bg-warning">
         <Stack className="text-center">
           <div className="display-6">
-            See you soon! Join us for our Sunday Service
+            See you soon! Join us for our Sunday service
           </div>
           <div className="fw-light">
             <FontAwesomeIcon icon={faClockFour} /> 5:00 PM – 7:00 PM at Church
