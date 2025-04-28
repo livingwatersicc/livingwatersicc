@@ -27,7 +27,7 @@ export const ContactMap = () => {
           </div>
           <div>
             <FontAwesomeIcon icon={faMapMarker} className="me-2" />
-            Church of Christ building, 1 St Andrew Street Dunedin.
+            Church of Christ building, 1 Saint Andrew Street Dunedin.
           </div>
           <div>
             <FontAwesomeIcon icon={faEnvelope} className="me-2" />

@@ -19,7 +19,7 @@ const services = [
     title: "Sunday service",
     frequency: "Weekly",
     timing: "Sundays 5.00 pm to 6.45 pm",
-    location: "Church of Christ building (1 St Andrews Street, Dunedin)",
+    location: "Church of Christ building (1 Saint Andrews Street, Dunedin)",
     icon: faChurch,
     subIcon: {
       icon: faHandsPraying,
@@ -30,7 +30,7 @@ const services = [
     title: "Youth fellowship",
     frequency: "Fortnightly",
     timing: "Fridays 5.00 pm to 6.30 pm",
-    location: "Church of Christ building (1 St Andrews Street, Dunedin)",
+    location: "Church of Christ building (1 Saint Andrews Street, Dunedin)",
     icon: faChurch,
     subIcon: {
       icon: faChildren,

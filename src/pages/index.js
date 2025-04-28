@@ -2,7 +2,7 @@ import { faClockFour } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Banner } from "components/banner";
 import { Wrapper } from "components/wrapper";
-import { Button, Stack } from "react-bootstrap";
+import Stack from "react-bootstrap/Stack";
 import { Believes } from "scenes/home/believes";
 import { Intro } from "scenes/home/content";
 import { List } from "scenes/services/list";
@@ -22,6 +22,10 @@ export default function Home() {
         <Intro />
       </Wrapper>
 
+      <Wrapper isGrayBg>
+        <Believes />
+      </Wrapper>
+
       <Wrapper bg="bg-warning">
         <Stack className="text-center">
           <div className="display-6">
@@ -29,18 +33,9 @@ export default function Home() {
           </div>
           <div className="fw-light">
             <FontAwesomeIcon icon={faClockFour} /> 5:00 PM – 7:00 PM at Church
-            of Christ building (1 St Andrew Street Dunedin)
-          </div>
-          <div className="mt-3">
-            <Button as="a" href="/services" variant="outline-dark">
-              Services
-            </Button>
+            of Christ building (1 Saint Andrew Street Dunedin)
           </div>
         </Stack>
-      </Wrapper>
-
-      <Wrapper isGrayBg>
-        <Believes />
       </Wrapper>
 
       <List showHEading />
