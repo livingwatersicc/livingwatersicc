@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Wrapper } from "components/wrapper";
 import { Heading } from "components/typography";
+import { motion } from "motion/react";
 
 const services = [
   {
@@ -69,7 +70,22 @@ export const List = ({ showHEading = false }) => {
       )}
       <div className={styles.services}>
         {services.map((service, idx) => (
-          <div key={idx} className={styles.service}>
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.3,
+              delay: idx * 0.3,
+              scale: {
+                type: "spring",
+                visualDuration: 0.3,
+                bounce: 0.5,
+                delay: idx * 0.3,
+              },
+            }}
+            className={styles.service}
+          >
             <div className={styles.image}>
               <span className="fa-layers fa-fw">
                 <FontAwesomeIcon
@@ -110,7 +126,7 @@ export const List = ({ showHEading = false }) => {
                 {service.location}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </Wrapper>
