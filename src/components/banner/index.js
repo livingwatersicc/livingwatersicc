@@ -24,9 +24,12 @@ export const Banner = ({
       <div className={styles.content}>
         <div className={styles.text}>
           <motion.section
-            initial={{ transform: "translateY(100px)" }}
-            animate={{ transform: "translateY(0px)" }}
-            transition={{ type: "spring" }}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.4,
+              scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            }}
           >
             <div className={"display-5 mb-3"}>{title}</div>
             {subtitle && <div className={"lead"}>{subtitle}</div>}
