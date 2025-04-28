@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useRouter } from "next/router";
 import { Logo } from "components/logo";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Link from "next/link";
 
 const menu = [
   {
@@ -66,6 +67,7 @@ export const NavMenu = () => {
                     {items.map((i, idx) => (
                       <NavDropdown.Item
                         key={idx}
+                        as={Link}
                         href={i.link}
                         active={i.link === pathname}
                       >
@@ -76,7 +78,7 @@ export const NavMenu = () => {
                 );
               }
               return (
-                <Nav.Link active={isActive} as={"a"} key={index} href={link}>
+                <Nav.Link active={isActive} as={Link} key={index} href={link}>
                   {text}
                 </Nav.Link>
               );
