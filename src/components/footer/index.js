@@ -1,17 +1,14 @@
-import { Button, Image, NavLink, Stack } from "react-bootstrap";
+import { Image, NavLink, Stack } from "react-bootstrap";
 import styles from "./footer.module.scss";
 import { Wrapper } from "components/wrapper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
-  faFacebookSquare,
   faInstagram,
-  faSquareInstagram,
-  faSquareXTwitter,
-  faSquareYoutube,
   faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const SOCIAL_MEDIA = [
   { icon: faFacebookF },
@@ -30,23 +27,34 @@ export const Footer = () => {
               <FontAwesomeIcon key={idx} size="1x" icon={media.icon} />
             ))}
           </Stack>
-          <Stack direction="horizontal" gap={2} className="flex-wrap">
-            <NavLink href="/services" variant="outline-light" size="sm">
+          <div className="d-flex flex-column w-100 gap-2 flex-md-row justify-content-start flex-grow-1">
+            <NavLink
+              as={Link}
+              href="/services"
+              variant="outline-light"
+              size="sm"
+            >
               Services
             </NavLink>
-            |
+            <div className="d-none d-md-inline">|</div>
             <NavLink
+              as={Link}
               href="/statement-of-faith"
               variant="outline-light"
               size="sm"
             >
               Statement of faith
             </NavLink>
-            |
-            <NavLink href="/contact" variant="outline-light" size="sm">
+            <div className="d-none d-md-inline">|</div>
+            <NavLink
+              as={Link}
+              href="/contact"
+              variant="outline-light"
+              size="sm"
+            >
               Contact
             </NavLink>
-          </Stack>
+          </div>
         </div>
         <div className={styles.logo}>
           <Image src="logo-white.png" alt="png logo" height={70} />
