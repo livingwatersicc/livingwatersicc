@@ -1,12 +1,10 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
+@import "styles/_mixins.scss";
 
 .container {
   display: flex;
   margin: 25px 0px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  @include media-breakpoint-down(lg) {
+  @include lg-down {
     flex-direction: column;
   }
 

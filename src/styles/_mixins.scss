@@ -1,0 +1,51 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+@mixin xl-down {
+  @include media-breakpoint-down(xl) {
+    @content;
+  }
+}
+
+@mixin lg-down {
+  @include media-breakpoint-down(lg) {
+    @content;
+  }
+}
+
+@mixin md-down {
+  @include media-breakpoint-down(md) {
+    @content;
+  }
+}
+
+@mixin sm-down {
+  @include media-breakpoint-down(sm) {
+    @content;
+  }
+}
+
+@mixin xl-up {
+  @include media-breakpoint-up(xl) {
+    @content;
+  }
+}
+
+@mixin lg-up {
+  @include media-breakpoint-up(lg) {
+    @content;
+  }
+}
+
+@mixin md-up {
+  @include media-breakpoint-up(md) {
+    @content;
+  }
+}
+
+@mixin sm-up {
+  @include media-breakpoint-up(sm) {
+    @content;
+  }
+}

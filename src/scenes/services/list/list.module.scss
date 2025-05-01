@@ -1,6 +1,4 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
+@import "styles/_mixins.scss";
 
 .services {
   display: flex;
@@ -16,16 +14,14 @@
     gap: 20px;
     justify-content: space-between;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    position: relative;
 
     .image {
-      position: absolute;
       right: 35px;
       display: flex;
       height: auto;
       align-items: center;
 
-      @include media-breakpoint-down(md) {
+      @include md-down {
         width: unset;
       }
     }
@@ -37,7 +33,7 @@
       flex-grow: 1;
     }
 
-    @include media-breakpoint-down(md) {
+    @include md-down {
       width: 100%;
     }
   }
