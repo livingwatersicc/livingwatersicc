@@ -41,7 +41,7 @@ export const NavMenu = () => {
       sticky="top"
       className="bg-light border-bottom"
     >
-      <Container>
+      <Container fluid="md">
         <Navbar.Brand href="/">
           <Logo />
         </Navbar.Brand>
@@ -50,7 +50,7 @@ export const NavMenu = () => {
           id="responsive-navbar-nav"
           className="justify-content-end"
         >
-          <Nav variant="">
+          <Nav variant="" className="ms-2 m-md-0">
             {menu?.map(({ link, text, items = [] }, index) => {
               const isActive =
                 link === pathname ||
