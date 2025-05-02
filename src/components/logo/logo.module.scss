@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  gap: 10px;
+  gap: 5px;
 
   .text {
     display: flex;
@@ -9,12 +9,12 @@
     color: $dark-blue;
 
     .first {
-      font-size: 30px;
+      font-size: 26px;
       line-height: 1.1em;
       font-weight: 500;
     }
     .second {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 500;
     }
   }

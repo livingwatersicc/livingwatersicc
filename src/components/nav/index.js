@@ -5,6 +5,15 @@ import { useRouter } from "next/router";
 import { Logo } from "components/logo";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Link from "next/link";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import { Button } from "react-bootstrap";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+  faHamburger,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 
 const menu = [
   {
@@ -34,6 +43,10 @@ const menu = [
 
 export const NavMenu = () => {
   const { pathname } = useRouter();
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <Navbar
       collapseOnSelect
@@ -45,46 +58,68 @@ export const NavMenu = () => {
         <Navbar.Brand href="/">
           <Logo />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse
-          id="responsive-navbar-nav"
-          className="justify-content-end"
+        <Button
+          variant="outline-primary"
+          className="d-md-none"
+          onClick={handleShow}
         >
-          <Nav variant="" className="ms-2 m-md-0">
-            {menu?.map(({ link, text, items = [] }, index) => {
-              const isActive =
-                link === pathname ||
-                (items.length && items.some((i) => i.link === pathname));
+          <FontAwesomeIcon icon={faBars} />
+        </Button>
+        <Offcanvas
+          show={show}
+          onHide={handleClose}
+          responsive="md"
+          placement="end"
+        >
+          <Offcanvas.Header className="justify-content-end pt-4 pe-2">
+            <Button variant="outline-primary" onClick={handleClose}>
+              <FontAwesomeIcon size="lg" icon={faTimes} />
+            </Button>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Nav variant="" className="ms-2 m-md-0">
+              {menu?.map(({ link, text, items = [] }, index) => {
+                const isActive =
+                  link === pathname ||
+                  (items.length && items.some((i) => i.link === pathname));
 
-              if (items.length) {
+                if (items.length) {
+                  return (
+                    <NavDropdown
+                      key={index}
+                      title={text}
+                      id="basic-nav-dropdown"
+                      active={isActive}
+                    >
+                      {items.map((i, idx) => (
+                        <NavDropdown.Item
+                          key={idx}
+                          as={Link}
+                          href={i.link}
+                          active={i.link === pathname}
+                          onClick={handleClose}
+                        >
+                          {i.text}
+                        </NavDropdown.Item>
+                      ))}
+                    </NavDropdown>
+                  );
+                }
                 return (
-                  <NavDropdown
-                    key={index}
-                    title={text}
-                    id="basic-nav-dropdown"
+                  <Nav.Link
                     active={isActive}
+                    as={Link}
+                    key={index}
+                    href={link}
+                    onClick={handleClose}
                   >
-                    {items.map((i, idx) => (
-                      <NavDropdown.Item
-                        key={idx}
-                        as={Link}
-                        href={i.link}
-                        active={i.link === pathname}
-                      >
-                        {i.text}
-                      </NavDropdown.Item>
-                    ))}
-                  </NavDropdown>
+                    {text}
+                  </Nav.Link>
                 );
-              }
-              return (
-                <Nav.Link active={isActive} as={Link} key={index} href={link}>
-                  {text}
-                </Nav.Link>
-              );
-            })}
-          </Nav>
-        </Navbar.Collapse>
+              })}
+            </Nav>
+          </Offcanvas.Body>
+        </Offcanvas>
       </Container>
     </Navbar>
   );
