@@ -1,15 +1,12 @@
-import React from "react";
-import { Map } from "components/map";
-import styles from "./contact.module.scss";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faMapMarker,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
 import { Button, Stack } from "react-bootstrap";
-import { Word } from "components/verse";
 import Obfuscate from "react-obfuscate";
+
+import { Map } from "components/map";
+import { Word } from "components/verse";
+
+import styles from "./contact.module.scss";
 
 export const ContactMap = () => {
   return (
@@ -47,8 +44,7 @@ export const ContactMap = () => {
               className="mt-2"
               variant="outline-dark"
               as={Obfuscate}
-              email="mailto:info.lwicc@gmail.com"
-            >
+              email="mailto:info.lwicc@gmail.com">
               Email
             </Button>
           </div>

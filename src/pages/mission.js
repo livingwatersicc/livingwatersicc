@@ -1,5 +1,4 @@
 import { Banner } from "components/banner";
-import React from "react";
 import { Mission } from "scenes/about/mission";
 
 const OurMission = () => {

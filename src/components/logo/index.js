@@ -1,4 +1,5 @@
 import Image from "react-bootstrap/Image";
+
 import styles from "./logo.module.scss";
 
 export const Logo = () => {

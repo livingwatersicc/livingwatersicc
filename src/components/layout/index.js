@@ -1,7 +1,9 @@
+import { useEffect, useRef } from "react";
+
+import { useRouter } from "next/router";
+
 import { Footer } from "components/footer";
 import { NavMenu } from "components/nav";
-import { useRouter } from "next/router";
-import { useEffect, useRef } from "react";
 
 export const Layout = ({ children }) => {
   const ref = useRef();

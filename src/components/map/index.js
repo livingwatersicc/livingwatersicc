@@ -8,7 +8,6 @@ export const Map = () => {
       className={styles.map}
       allowfullscreen=""
       loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
   );
 };

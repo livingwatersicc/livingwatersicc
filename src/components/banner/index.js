@@ -1,5 +1,5 @@
-import { Image } from "react-bootstrap";
 import { motion } from "motion/react";
+import { Image } from "react-bootstrap";
 
 import styles from "./banner.module.scss";
 
@@ -14,8 +14,7 @@ export const Banner = ({
 
   return (
     <div
-      className={`${styles.container} ${isResponsive ? styles.responsive : ""}`}
-    >
+      className={`${styles.container} ${isResponsive ? styles.responsive : ""}`}>
       <Image
         src={image}
         alt="banner image"
@@ -29,8 +28,7 @@ export const Banner = ({
             transition={{
               duration: 0.4,
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-            }}
-          >
+            }}>
             <div className={"display-5 mb-3"}>{title}</div>
             {subtitle && <div className={"lead"}>{subtitle}</div>}
           </motion.section>

@@ -1,5 +1,3 @@
-import styles from "./list.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChildren,
   faChurch,
@@ -11,9 +9,13 @@ import {
   faMapLocation,
   faPlaceOfWorship,
 } from "@fortawesome/free-solid-svg-icons";
-import { Wrapper } from "components/wrapper";
-import { Heading } from "components/typography";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "motion/react";
+
+import { Heading } from "components/typography";
+import { Wrapper } from "components/wrapper";
+
+import styles from "./list.module.scss";
 
 const services = [
   {
@@ -84,8 +86,7 @@ export const List = ({ showHEading = false }) => {
                 delay: idx * 0.3,
               },
             }}
-            className={styles.service}
-          >
+            className={styles.service}>
             <div className={styles.image}>
               <span className="fa-layers fa-fw">
                 <FontAwesomeIcon

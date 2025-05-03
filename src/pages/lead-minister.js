@@ -1,6 +1,6 @@
 import { Banner } from "components/banner";
-import React from "react";
 import { Minister } from "scenes/about/minister";
+
 const LeadMinister = () => {
   return (
     <>

@@ -15,8 +15,7 @@ export const Intro = () => {
         as one family to worship the one true Triune <strong>God</strong>. As
         Scripture reminds us in{" "}
         <mark
-          title={`9 After these things I looked, and behold, a great multitude which no one could number, of all nations, tribes, peoples, and tongues, standing before the throne and before the Lamb, clothed with white robes, with palm branches in their hands, 10 and crying out with a loud voice, saying, “Salvation belongs to our God who sits on the throne, and to the Lamb!”`}
-        >
+          title={`9 After these things I looked, and behold, a great multitude which no one could number, of all nations, tribes, peoples, and tongues, standing before the throne and before the Lamb, clothed with white robes, with palm branches in their hands, 10 and crying out with a loud voice, saying, “Salvation belongs to our God who sits on the throne, and to the Lamb!”`}>
           Revelation 7:9-10
         </mark>
         , people from every nation, tribe, and tongue will stand before His

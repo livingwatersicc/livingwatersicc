@@ -1,5 +1,6 @@
-import { Heading } from "components/typography";
 import Link from "next/link";
+
+import { Heading } from "components/typography";
 
 const believes = [
   {

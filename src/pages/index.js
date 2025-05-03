@@ -1,9 +1,10 @@
 import { faClockFour } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Banner } from "components/banner";
-import { Wrapper } from "components/wrapper";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
+
+import { Banner } from "components/banner";
+import { Wrapper } from "components/wrapper";
 import { Believes } from "scenes/home/believes";
 import { Intro } from "scenes/home/content";
 

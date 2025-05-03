@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./media.module.scss";
 import Image from "react-bootstrap/Image";
+
+import styles from "./media.module.scss";
 
 export const Media = ({ image, title, children }) => {
   return (

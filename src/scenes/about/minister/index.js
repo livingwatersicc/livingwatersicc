@@ -1,5 +1,6 @@
-import { Wrapper } from "components/wrapper";
 import { Image } from "react-bootstrap";
+
+import { Wrapper } from "components/wrapper";
 
 export const Minister = () => {
   return (

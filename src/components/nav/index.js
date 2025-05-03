@@ -1,19 +1,17 @@
+import { useState } from "react";
+
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { useRouter } from "next/router";
-import { Logo } from "components/logo";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Link from "next/link";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { Button } from "react-bootstrap";
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faHamburger,
-  faTimes,
-} from "@fortawesome/free-solid-svg-icons";
+
+import { Logo } from "components/logo";
 
 const menu = [
   {
@@ -47,13 +45,13 @@ export const NavMenu = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <Navbar
       collapseOnSelect
       expand="md"
       sticky="top"
-      className="bg-light border-bottom"
-    >
+      className="bg-light border-bottom">
       <Container fluid="md">
         <Navbar.Brand href="/">
           <Logo />
@@ -61,16 +59,14 @@ export const NavMenu = () => {
         <Button
           variant="outline-primary"
           className="d-md-none"
-          onClick={handleShow}
-        >
+          onClick={handleShow}>
           <FontAwesomeIcon icon={faBars} />
         </Button>
         <Offcanvas
           show={show}
           onHide={handleClose}
           responsive="md"
-          placement="end"
-        >
+          placement="end">
           <Offcanvas.Header className="justify-content-end pt-4 pe-2">
             <Button variant="outline-primary" onClick={handleClose}>
               <FontAwesomeIcon size="lg" icon={faTimes} />
@@ -81,7 +77,7 @@ export const NavMenu = () => {
               {menu?.map(({ link, text, items = [] }, index) => {
                 const isActive =
                   link === pathname ||
-                  (items.length && items.some((i) => i.link === pathname));
+                  (items.length && items.some(i => i.link === pathname));
 
                 if (items.length) {
                   return (
@@ -89,16 +85,14 @@ export const NavMenu = () => {
                       key={index}
                       title={text}
                       id="basic-nav-dropdown"
-                      active={isActive}
-                    >
+                      active={isActive}>
                       {items.map((i, idx) => (
                         <NavDropdown.Item
                           key={idx}
                           as={Link}
                           href={i.link}
                           active={i.link === pathname}
-                          onClick={handleClose}
-                        >
+                          onClick={handleClose}>
                           {i.text}
                         </NavDropdown.Item>
                       ))}
@@ -111,8 +105,7 @@ export const NavMenu = () => {
                     as={Link}
                     key={index}
                     href={link}
-                    onClick={handleClose}
-                  >
+                    onClick={handleClose}>
                     {text}
                   </Nav.Link>
                 );

@@ -1,5 +1,6 @@
 import { Banner } from "components/banner";
 import { Journey } from "scenes/about/journey";
+
 const OurJourney = () => {
   return (
     <>

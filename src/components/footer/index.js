@@ -1,14 +1,16 @@
-import { Image, NavLink, Stack } from "react-bootstrap";
-import styles from "./footer.module.scss";
-import { Wrapper } from "components/wrapper";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faInstagram,
   faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { Image, NavLink, Stack } from "react-bootstrap";
+
+import { Wrapper } from "components/wrapper";
+
+import styles from "./footer.module.scss";
 
 const SOCIAL_MEDIA = [
   { icon: faFacebookF },
@@ -32,8 +34,7 @@ export const Footer = () => {
               as={Link}
               href="/services"
               variant="outline-light"
-              size="sm"
-            >
+              size="sm">
               Services
             </NavLink>
             <div className="d-none d-md-inline">|</div>
@@ -41,8 +42,7 @@ export const Footer = () => {
               as={Link}
               href="/statement-of-faith"
               variant="outline-light"
-              size="sm"
-            >
+              size="sm">
               Statement of faith
             </NavLink>
             <div className="d-none d-md-inline">|</div>
@@ -50,8 +50,7 @@ export const Footer = () => {
               as={Link}
               href="/contact"
               variant="outline-light"
-              size="sm"
-            >
+              size="sm">
               Contact
             </NavLink>
           </div>
