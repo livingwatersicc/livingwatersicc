@@ -28,7 +28,7 @@ export const ContactMap = () => {
             <div>1 Saint Andrew Street</div>
             <div>Dunedin.</div>
           </Stack>
-          <Stack direction="horizontal" gap={3}>
+          <Stack direction="horizontal" gap={3} className="flex-wrap">
             <Stack className="small" direction="horizontal" gap={2}>
               <FontAwesomeIcon icon={faEnvelope} />
               info.lwicc@gmail.com

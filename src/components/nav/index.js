@@ -67,50 +67,49 @@ export const NavMenu = () => {
           onHide={handleClose}
           responsive="md"
           placement="end">
-          <Offcanvas.Header className="justify-content-end pt-4 pe-2">
+          <Offcanvas.Header className="justify-content-between border-bottom align-items-end mt-3">
+            <div className="ms-3">www.livingwaterschurch.org.nz</div>
             <Button variant="outline-primary" onClick={handleClose}>
               <FontAwesomeIcon size="lg" icon={faTimes} />
             </Button>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav variant="" className="ms-2 m-md-0">
-              {menu?.map(({ link, text, items = [] }, index) => {
-                const isActive =
-                  link === pathname ||
-                  (items.length && items.some(i => i.link === pathname));
+            <Navbar className="align-item-start p-3" expand={false}>
+              <Nav variant="" className="flex-column flex-md-row w-100">
+                {menu?.map(({ link, text, items = [] }, index) => {
+                  const isActive =
+                    link === pathname ||
+                    (items.length && items.some(i => i.link === pathname));
 
-                if (items.length) {
+                  if (items.length) {
+                    return (
+                      <NavDropdown key={index} title={text} active={isActive}>
+                        {items.map((i, idx) => (
+                          <NavDropdown.Item
+                            key={idx}
+                            as={Link}
+                            href={i.link}
+                            active={i.link === pathname}
+                            onClick={handleClose}>
+                            {i.text}
+                          </NavDropdown.Item>
+                        ))}
+                      </NavDropdown>
+                    );
+                  }
                   return (
-                    <NavDropdown
+                    <Nav.Link
+                      active={isActive}
+                      as={Link}
                       key={index}
-                      title={text}
-                      id="basic-nav-dropdown"
-                      active={isActive}>
-                      {items.map((i, idx) => (
-                        <NavDropdown.Item
-                          key={idx}
-                          as={Link}
-                          href={i.link}
-                          active={i.link === pathname}
-                          onClick={handleClose}>
-                          {i.text}
-                        </NavDropdown.Item>
-                      ))}
-                    </NavDropdown>
+                      href={link}
+                      onClick={handleClose}>
+                      {text}
+                    </Nav.Link>
                   );
-                }
-                return (
-                  <Nav.Link
-                    active={isActive}
-                    as={Link}
-                    key={index}
-                    href={link}
-                    onClick={handleClose}>
-                    {text}
-                  </Nav.Link>
-                );
-              })}
-            </Nav>
+                })}
+              </Nav>
+            </Navbar>
           </Offcanvas.Body>
         </Offcanvas>
       </Container>
