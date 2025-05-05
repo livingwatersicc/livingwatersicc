@@ -5,7 +5,7 @@ const WhatToExpect = () => {
   return (
     <>
       <Banner
-        image={"communion.jpg"}
+        image={"church-inside.jpg"}
         title={"What to expect"}
         isResponsive
         position="center"

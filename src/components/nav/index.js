@@ -34,7 +34,7 @@ const menu = [
     link: "/services",
     items: [
       { text: "Our services", link: "/services" },
-      { text: "What to expect?", link: "/what-to-expect" },
+      { text: "What to expect", link: "/what-to-expect" },
     ],
   },
   {
