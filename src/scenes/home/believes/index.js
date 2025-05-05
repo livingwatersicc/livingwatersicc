@@ -59,8 +59,8 @@ const believes = [
   {
     text: (
       <p>
-        A believer must be continually filled with the Holy Spirit to have the
-        power to witness for Christ, both through actions and words.{" "}
+        A believer must live in the fullness of the Holy Spirit to have the
+        power to witness for Christ, both through actions and words.
       </p>
     ),
   },

@@ -5,7 +5,7 @@ const OurMission = () => {
   return (
     <>
       <Banner
-        image={"church-tower.jpg"}
+        image={"water-cross.png"}
         title={"Our mission"}
         isResponsive
         position="top"

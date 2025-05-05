@@ -33,7 +33,7 @@ const services = [
     title: "Youth fellowship",
     frequency: "Fortnightly",
     timing: "Fridays 5.00 PM to 6.30 PM",
-    location: "Church of Christ building (1 Saint Andrews Street, Dunedin)",
+    location: "contact info.lwicc@gmail.com for venue information",
     icon: faChurch,
     subIcon: {
       icon: faChildren,

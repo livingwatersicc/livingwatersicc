@@ -1,3 +1,5 @@
+import { Reference } from "components/verse";
+
 export const Intro = () => {
   return (
     <div>
@@ -14,13 +16,24 @@ export const Intro = () => {
         Regardless of language, tribe, race, or nationality, we gather together
         as one family to worship the one true Triune <strong>God</strong>. As
         Scripture reminds us in{" "}
-        <mark
-          title={`9 After these things I looked, and behold, a great multitude which no one could number, of all nations, tribes, peoples, and tongues, standing before the throne and before the Lamb, clothed with white robes, with palm branches in their hands, 10 and crying out with a loud voice, saying, “Salvation belongs to our God who sits on the throne, and to the Lamb!”`}>
+        <Reference
+          verse={
+            <>
+              9 After this I looked, and there before me was a great multitude
+              that no one could count, from every nation, tribe, people and
+              language, standing before the throne and before the Lamb. They
+              were wearing white robes and were holding palm branches in their
+              hands. 10 And they cried out in a loud voice: “Salvation belongs
+              to our God, who sits on the throne, and to the Lamb.”
+            </>
+          }>
           Revelation 7:9-10
-        </mark>
+        </Reference>
         , people from every nation, tribe, and tongue will stand before His
-        throne, united in worship. Here, we celebrate the unity we have in{" "}
-        <strong>Christ!</strong>
+        throne, united in worship.
+      </p>
+      <p>
+        Here, we celebrate the unity we have in <strong>Christ!</strong>
       </p>
       <p>
         The church is run by a set of believing volunteers who are in various

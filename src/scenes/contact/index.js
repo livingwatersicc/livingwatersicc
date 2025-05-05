@@ -1,4 +1,4 @@
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Stack } from "react-bootstrap";
 import Obfuscate from "react-obfuscate";
@@ -32,10 +32,6 @@ export const ContactMap = () => {
             <Stack className="small" direction="horizontal" gap={2}>
               <FontAwesomeIcon icon={faEnvelope} />
               info.lwicc@gmail.com
-            </Stack>
-            <Stack className="small" direction="horizontal" gap={2}>
-              <FontAwesomeIcon icon={faPhone} />
-              +64 012 345 6789
             </Stack>
           </Stack>
           <div>

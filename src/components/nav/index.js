@@ -22,16 +22,20 @@ const menu = [
     text: "About",
     link: "/about",
     items: [
-      { text: "Our Journey", link: "/journey" },
-      { text: "Our mission", link: "/mission" },
       { text: "Our vision", link: "/vision" },
-      { text: "Lead minister", link: "/lead-minister" },
+      { text: "Our mission", link: "/mission" },
+      { text: "Our team", link: "/team" },
+      { text: "Our Journey", link: "/journey" },
       { text: "Statement of faith ", link: "/statement-of-faith" },
     ],
   },
   {
     text: "Services",
     link: "/services",
+    items: [
+      { text: "Our services", link: "/services" },
+      { text: "What to expect?", link: "/what-to-expect" },
+    ],
   },
   {
     text: "Contact",

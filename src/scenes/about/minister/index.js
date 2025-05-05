@@ -1,10 +1,12 @@
 import { Image } from "react-bootstrap";
 
+import { Heading } from "components/typography";
 import { Wrapper } from "components/wrapper";
 
-export const Minister = () => {
+export const LeadMinister = () => {
   return (
     <Wrapper>
+      <Heading>Lead minister</Heading>
       <p>
         Prasath is the lead minister of the Living Waters church. Prasath was
         born in a small town Vellore, in southern India and moved to New Zealand

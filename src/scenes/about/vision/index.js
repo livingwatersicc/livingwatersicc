@@ -13,11 +13,13 @@ export const Vision = () => {
         The vision for the Church is to reach the unreached. There are many
         people in this world, mostly not due to their own fault, who are
         brokenhearted, captive to something, and living in darkness. The answer
-        to all their problems is 'Jesus' as it says in Acts 4:12 “Salvation is
-        found in no one else, for there is no other name under heaven given to
-        mankind by which we must be saved”. Our vision is therefore to proclaim
-        the good news and transform lives through the truth as revealed in the
-        holy scriptures.
+        to all their problems is 'Jesus' as it says in Acts 4:12{" "}
+        <em>
+          “Salvation is found in no one else, for there is no other name under
+          heaven given to mankind by which we must be saved”
+        </em>
+        . Our vision is therefore to proclaim the good news and transform lives
+        through the truth as revealed in the holy scriptures.
       </p>
       <p>
         Our vision is not just to fill the seats in church, but to fill God's

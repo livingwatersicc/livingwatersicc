@@ -1,4 +1,4 @@
-import { faClockFour } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
@@ -13,10 +13,10 @@ export default function Home() {
     <>
       <Banner
         image={"sea.jpg"}
-        title={"Revelation 22:17"}
-        subtitle={`The Spirit and the bride say, “Come!” And let the one who hears say,
-            “Come!” Let the one who is thirsty come; and let the one who wishes
-            take the free gift of the water of life.`}
+        title={"John 7:37-38"}
+        subtitle={
+          "Let anyone who is thirsty come to me [Jesus] and drink. Whoever believes in me, as Scripture has said, rivers of living water will flow from within them."
+        }
       />
 
       <Wrapper>
@@ -25,12 +25,13 @@ export default function Home() {
 
       <Wrapper bg="bg-warning">
         <Stack className="text-center">
-          <div className="display-6">
-            See you soon! Join us for our Sunday service
+          <div className="display-6">Join us for our Sunday service</div>
+          <div className="h4">See you soon!</div>
+          <div className="fw-light">
+            <FontAwesomeIcon icon={faClock} /> 5:00 PM – 6:45 PM
           </div>
           <div className="fw-light">
-            <FontAwesomeIcon icon={faClockFour} /> 5:00 PM – 6:45 PM at Church
-            of Christ building (1 Saint Andrew Street Dunedin)
+            @ Church of Christ building (1 Saint Andrew Street Dunedin)
           </div>
           <div className="mt-3">
             <Button as="a" href="/services" variant="outline-dark">

@@ -1,18 +1,18 @@
 import { Banner } from "components/banner";
-import { List } from "scenes/services/list";
+import { Content } from "scenes/services/content";
 
-const Services = () => {
+const WhatToExpect = () => {
   return (
     <>
       <Banner
         image={"communion.jpg"}
-        title={"Services"}
+        title={"What to expect"}
         isResponsive
         position="center"
       />
-      <List />
+      <Content />
     </>
   );
 };
 
-export default Services;
+export default WhatToExpect;

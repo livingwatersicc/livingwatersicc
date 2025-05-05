@@ -11,8 +11,8 @@ export const Journey = () => {
       <p>
         In 2016, a small group of believers (Dunedin Prayer Warriors) came
         together fortnightly to pray and seek the Lord, by the initiative of a
-        humble believer Bro Rumesh. By the grace of God, this is now (April
-        2025) a public church,{" "}
+        humble believer Bro Rumesh. By the grace of God, this is a public church
+        since April 2025,{" "}
         <em>a planting of the Lord, for the display of His splendor</em> [Isa
         61:3, NIV].
       </p>

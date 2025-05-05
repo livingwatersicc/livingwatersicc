@@ -1,18 +1,18 @@
 import { Banner } from "components/banner";
-import { Minister } from "scenes/about/minister";
+import { LeadMinister } from "scenes/about/minister";
 
-const LeadMinister = () => {
+const Team = () => {
   return (
     <>
       <Banner
         image={"bible.jpg"}
-        title={"Lead minister"}
+        title={"Our team"}
         isResponsive
         position="top"
       />
-      <Minister />
+      <LeadMinister />
     </>
   );
 };
 
-export default LeadMinister;
+export default Team;
