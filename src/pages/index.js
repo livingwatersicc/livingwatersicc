@@ -1,5 +1,6 @@
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 
@@ -34,7 +35,7 @@ export default function Home() {
             @ Church of Christ building (1 Saint Andrew Street Dunedin)
           </div>
           <div className="mt-3">
-            <Button as="a" href="/services" variant="outline-dark">
+            <Button as={Link} href="/services" variant="outline-dark">
               Services
             </Button>
           </div>
