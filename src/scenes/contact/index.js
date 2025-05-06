@@ -35,12 +35,12 @@ export const ContactMap = () => {
             </Stack>
           </Stack>
           <div>
-            <div>For Enquires or plan a visit, please email us.</div>
+            <div>For enquiries or to plan a visit, please email us.</div>
             <Button
               className="mt-2"
               variant="outline-dark"
               as={Obfuscate}
-              email="mailto:info.lwicc@gmail.com">
+              email="info.lwicc@gmail.com">
               Email
             </Button>
           </div>
