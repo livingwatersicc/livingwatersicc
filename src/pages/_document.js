@@ -13,7 +13,7 @@ export default function Document() {
           key={"description"}
           property="og:description"
           content={
-            "Living Waters International Christian Church a a non-denominational, Bible believing christian community who seek to follow Christ."
+            "Living Waters International Christian Church is a non-denominational, Bible believing christian community who seek to follow Christ."
           }
         />
         <meta
