@@ -21,6 +21,11 @@ export default function Document() {
           property="og:image"
           content={"https://www.livingwaterschurch.org.nz/logo.png"}
         />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:site_name"
+          content="Living Waters International Christian Church"
+        />
       </Head>
       <body>
         <Main />
