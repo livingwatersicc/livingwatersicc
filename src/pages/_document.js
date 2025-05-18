@@ -16,7 +16,11 @@ export default function Document() {
             "Living Waters International Christian Church a a non-denominational, Bible believing christian community who seek to follow Christ."
           }
         />
-        <meta key={"image"} property="og:image" content={"/logo.png"} />
+        <meta
+          key={"image"}
+          property="og:image"
+          content={"https://www.livingwaterschurch.org.nz/logo.png"}
+        />
       </Head>
       <body>
         <Main />

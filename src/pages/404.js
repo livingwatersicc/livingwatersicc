@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
@@ -8,6 +9,9 @@ import { Wrapper } from "components/wrapper";
 const Custom404 = () => {
   return (
     <>
+      <Head>
+        <title>Page Not Found</title>
+      </Head>
       <Banner
         title={"Oops! Page Not Found"}
         image={"sheep.jpg"}
