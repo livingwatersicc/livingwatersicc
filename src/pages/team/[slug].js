@@ -10,6 +10,7 @@ const slugs = team.map(t => t.slug);
 
 const Team = ({ slug }) => {
   const member = team.find(t => t.slug == slug);
+  if (!member) return null;
 
   return (
     <>
