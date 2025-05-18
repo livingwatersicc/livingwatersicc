@@ -62,11 +62,6 @@ export const Mission = () => {
         work of the Holy Spirit through the revealed Word.
       </p>
       <p>
-        The mission of the Living Waters Church is to inspire the believers to
-        deeply study God’s Word, inviting the Holy Spirit’s transformative work
-        through a growing relationship with God.
-      </p>
-      <p>
         As we earnestly devote ourselves to the diligent study of God's Word,
         the truth it imparts will progressively sanctify and liberate us{" "}
         <Reference

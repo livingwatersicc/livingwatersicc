@@ -24,7 +24,7 @@ export const Footer = () => {
     <Wrapper className=" pt-5 pb-5">
       <div className={styles.footer}>
         <div className={styles.content}>
-          <Stack direction="horizontal" gap={2}>
+          <Stack direction="horizontal" gap={2} className="d-none">
             {SOCIAL_MEDIA.map((media, idx) => (
               <FontAwesomeIcon key={idx} size="1x" icon={media.icon} />
             ))}

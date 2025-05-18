@@ -1,4 +1,4 @@
-import { Word } from "components/verse";
+import { Reference, Word } from "components/verse";
 import { Wrapper } from "components/wrapper";
 
 export const Journey = () => {
@@ -13,8 +13,20 @@ export const Journey = () => {
         together fortnightly to pray and seek the Lord, by the initiative of a
         humble believer Bro Rumesh. By the grace of God, this is a public church
         since April 2025,{" "}
-        <em>a planting of the Lord, for the display of His splendor</em> [Isa
-        61:3, NIV].
+        <em>a planting of the Lord, for the display of His splendor</em>{" "}
+        <Reference
+          verse={
+            <>
+              and provide for those who grieve in Zion— to bestow on them a
+              crown of beauty instead of ashes, the oil of joy instead of
+              mourning, and a garment of praise instead of a spirit of despair.
+              They will be called oaks of righteousness, a planting of the Lord
+              for the display of his splendor.
+            </>
+          }>
+          (Isa 61:3, NIV)
+        </Reference>
+        .
       </p>
       <p>
         Over the past nine years, God's mighty hand was over this prayer

@@ -14,6 +14,8 @@ export const Word = ({ children, verse }) => {
 };
 
 export const Reference = ({ children, verse }) => {
+  if (!verse) return children;
+
   const renderTooltip = props => <Tooltip {...props}>{verse}</Tooltip>;
   return (
     <OverlayTrigger

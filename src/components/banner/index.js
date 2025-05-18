@@ -16,7 +16,7 @@ export const Banner = ({
     <div
       className={`${styles.container} ${isResponsive ? styles.responsive : ""}`}>
       <Image
-        src={image}
+        src={`/${image}`}
         alt="banner image"
         className={`${styles.image} ${_position}`}
       />

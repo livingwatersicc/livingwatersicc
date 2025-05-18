@@ -1,12 +1,10 @@
 import { Image } from "react-bootstrap";
 
-import { Heading } from "components/typography";
-import { Wrapper } from "components/wrapper";
+import { Reference } from "components/verse";
 
-export const LeadMinister = () => {
+export const Prasath = () => {
   return (
-    <Wrapper>
-      <Heading>Lead minister</Heading>
+    <>
       <p>
         Prasath is the lead minister of the Living Waters church. Prasath was
         born in a small town Vellore, in southern India and moved to New Zealand
@@ -16,7 +14,17 @@ export const LeadMinister = () => {
         Prasath was born and grew up in a christian family; yet he was not saved
         until 2013. He came to the conviction that being born in a christian
         family or going to church regularly does not make one a christian but
-        being born again of God (John 1:13).
+        being born again of God{" "}
+        <Reference
+          verse={
+            <>
+              children born not of natural descent, nor of human decision or a
+              husband’s will, but born of God.
+            </>
+          }>
+          (John 1:13)
+        </Reference>
+        .
       </p>
       <p>
         By the grace and mercy of God, he was serving as the primary preaching
@@ -35,7 +43,7 @@ export const LeadMinister = () => {
 
       <figure className="figure">
         <Image
-          src="minister1.png"
+          src="/people/minister1.png"
           className="w-75"
           rounded
           alt="Lead minister"
@@ -50,6 +58,6 @@ export const LeadMinister = () => {
         and youth ministry of the church.
       </p>
       <p>Supporting elders and their family</p>
-    </Wrapper>
+    </>
   );
 };

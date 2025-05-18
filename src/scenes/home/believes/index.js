@@ -73,6 +73,7 @@ const believes = [
     ),
   },
 ];
+
 export const Believes = () => {
   return (
     <>

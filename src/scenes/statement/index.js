@@ -1,4 +1,5 @@
 import { Heading } from "components/typography";
+import { Reference } from "components/verse";
 import { Wrapper } from "components/wrapper";
 
 const STATEMENTS = [
@@ -7,9 +8,18 @@ const STATEMENTS = [
       <p>
         The Bible (66 books) is the inspired and infallible Word of God and all
         scriptures are God breathed which is for correction, rebuking,
-        encouragement and for training in righteousness (2 Tim 3:16). Therefore,
-        the word of God is the supreme authority - above all traditions and any
-        man's words.
+        encouragement and for training in righteousness{" "}
+        <Reference
+          verse={
+            <>
+              All Scripture is God-breathed and is useful for teaching,
+              rebuking, correcting and training in righteousness,
+            </>
+          }>
+          (2 Tim 3:16)
+        </Reference>
+        . Therefore, the word of God is the supreme authority - above all
+        traditions and any man's words.
       </p>
     ),
   },
@@ -17,8 +27,21 @@ const STATEMENTS = [
     text: (
       <p>
         There is one true God who exists eternally in three Persons: the Father,
-        the Son, and the Holy Spirit. Each of them are co-equal and co-eternal
-        (Matthew 28:19; 1 John 5:7).
+        the Son, and the Holy Spirit. Each of them are co-equal and co-eternal (
+        <Reference
+          verse={
+            <>
+              Therefore go and make disciples of all nations, baptizing them in
+              the name of the Father and of the Son and of the Holy Spirit,
+            </>
+          }>
+          Matthew 28:19
+        </Reference>
+        ;{" "}
+        <Reference verse={<>For there are three that testify:</>}>
+          1 John 5:7
+        </Reference>
+        ).
       </p>
     ),
   },
@@ -26,10 +49,35 @@ const STATEMENTS = [
     text: (
       <p>
         Jesus Christ, God revealed in the flesh, is the only begotten Son of God
-        and God the Son from eternity (Isaiah 9:6; John 1:1, 14). We affirm His
-        virgin birth, sinless life, sacrificial death, bodily resurrection, His
-        ascension to the Father and His promised return in power and glory
-        (second coming of Christ).
+        and God the Son from eternity (
+        <Reference
+          verse={
+            <>
+              For to us a child is born, to us a son is given, and the
+              government will be on his shoulders. And he will be called
+              Wonderful Counselor, Mighty God, Everlasting Father, Prince of
+              Peace.
+            </>
+          }>
+          Isaiah 9:6
+        </Reference>
+        ;{" "}
+        <Reference
+          verse={
+            <>
+              1 In the beginning was the Word, and the Word was with God, and
+              the Word was God.
+              <br />
+              14 The Word became flesh and made his dwelling among us. We have
+              seen his glory, the glory of the one and only Son, who came from
+              the Father, full of grace and truth.
+            </>
+          }>
+          John 1:1, 14
+        </Reference>
+        ). We affirm His virgin birth, sinless life, sacrificial death, bodily
+        resurrection, His ascension to the Father and His promised return in
+        power and glory (second coming of Christ).
       </p>
     ),
   },
