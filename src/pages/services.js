@@ -3,11 +3,11 @@ import Head from "next/head";
 import { Banner } from "components/banner";
 import { List } from "scenes/services/list";
 
-const Services = () => {
+const Services = ({ siteName }) => {
   return (
     <>
       <Head>
-        <title>Services</title>
+        <title>Services | {siteName}</title>
       </Head>
       <Banner
         image={"communion.jpg"}

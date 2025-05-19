@@ -8,11 +8,11 @@ import { Banner } from "components/banner";
 import { Wrapper } from "components/wrapper";
 import { team } from "scenes/team";
 
-const Team = () => {
+const Team = ({ siteName }) => {
   return (
     <>
       <Head>
-        <title>Our team</title>
+        <title>Minters and Elders of {siteName}</title>
       </Head>
       <Banner
         image={"bible.jpg"}

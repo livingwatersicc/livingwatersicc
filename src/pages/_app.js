@@ -12,11 +12,13 @@ import "styles/fonts.scss";
 
 export const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
+const SITE_NAME = "Living Waters International Christian Church";
+
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Layout>
-        <Component {...pageProps} />
+        <Component {...pageProps} siteName={SITE_NAME} />
       </Layout>
       <GoogleAnalytics gaId={gaId} />
     </>

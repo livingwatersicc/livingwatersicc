@@ -10,11 +10,11 @@ import { Wrapper } from "components/wrapper";
 import { Believes } from "scenes/home/believes";
 import { Intro } from "scenes/home/content";
 
-export default function Home() {
+export default function Home({ siteName }) {
   return (
     <>
       <Head>
-        <title>Living Waters Church</title>
+        <title>{siteName} | Dunedin, New Zealand</title>
       </Head>
       <Banner
         image={"sea.jpg"}

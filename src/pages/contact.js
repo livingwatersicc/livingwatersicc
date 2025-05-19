@@ -3,11 +3,11 @@ import Head from "next/head";
 import { Banner } from "components/banner";
 import { ContactMap } from "scenes/contact";
 
-const Contact = () => {
+const Contact = ({ siteName }) => {
   return (
     <>
       <Head>
-        <title>Contact Us</title>
+        <title>Contact {siteName} | Dunedin, New Zealand</title>
       </Head>
       <Banner image={"water-church.jpg"} title={"Contact us"} isResponsive />
 

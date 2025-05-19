@@ -7,7 +7,9 @@ export default function Document() {
         <meta
           key={"title"}
           property="og:title"
-          content={"Living Waters Church"}
+          content={
+            "Living Waters International Christian Church | Dunedin, New Zealand"
+          }
         />
         <meta
           key={"description"}
@@ -20,6 +22,10 @@ export default function Document() {
           key={"image"}
           property="og:image"
           content={"https://www.livingwaterschurch.org.nz/logo.png"}
+        />
+        <meta
+          property="og:url"
+          content="https://www.livingwaterschurch.org.nz/"
         />
         <meta property="og:type" content="website" />
         <meta
