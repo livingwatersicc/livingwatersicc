@@ -1,5 +1,5 @@
 import {
-  faFacebookF,
+  faFacebookSquare,
   faInstagram,
   faXTwitter,
   faYoutube,
@@ -13,7 +13,7 @@ import { Wrapper } from "components/wrapper";
 import styles from "./footer.module.scss";
 
 const SOCIAL_MEDIA = [
-  { icon: faFacebookF },
+  { icon: faFacebookSquare, link: "https://www.facebook.com/lwicc.dunedin" },
   { icon: faXTwitter },
   { icon: faYoutube },
   { icon: faInstagram },
@@ -24,12 +24,19 @@ export const Footer = () => {
     <Wrapper className=" pt-5 pb-5">
       <div className={styles.footer}>
         <div className={styles.content}>
-          <Stack direction="horizontal" gap={2} className="d-none">
-            {SOCIAL_MEDIA.map((media, idx) => (
-              <FontAwesomeIcon key={idx} size="1x" icon={media.icon} />
-            ))}
-          </Stack>
           <div className="d-flex flex-column w-100 gap-2 flex-md-row justify-content-start flex-grow-1">
+            <Stack direction="horizontal" gap={2}>
+              {SOCIAL_MEDIA.filter(media => !!media.link).map((media, idx) => (
+                <Link key={idx} href={media.link || "/"} target="_blank">
+                  <FontAwesomeIcon
+                    size="1x"
+                    className="text-light"
+                    icon={media.icon}
+                  />
+                </Link>
+              ))}
+            </Stack>
+            <div className="d-none d-md-inline">|</div>
             <NavLink
               as={Link}
               href="/services"

@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "motion/react";
+import { Stack } from "react-bootstrap";
 
 import { Heading } from "components/typography";
 import { Wrapper } from "components/wrapper";
@@ -22,7 +23,12 @@ const services = [
     title: "Sunday service",
     frequency: "Weekly",
     timing: "Sundays 5.00 PM to 6.45 PM",
-    location: "Church of Christ building (1 Saint Andrews Street, Dunedin)",
+    location: (
+      <div>
+        Church of Christ building{" "}
+        <span className="text-nowrap">(1 Saint Andrews Street, Dunedin)</span>
+      </div>
+    ),
     icon: faChurch,
     subIcon: {
       icon: faHandsPraying,
@@ -111,21 +117,25 @@ export const List = ({ showHEading = false }) => {
                 </figcaption>
               </figure>
 
-              <div className={"small"}>
+              <Stack
+                className={"small align-items-start"}
+                direction="horizontal">
                 <FontAwesomeIcon
                   icon={faClock}
-                  className="me-2 text-secondary"
+                  className="me-2 mt-1 text-secondary"
                 />
                 {service.timing}
-              </div>
+              </Stack>
 
-              <div className={"small"}>
+              <Stack
+                className={"small align-items-start"}
+                direction="horizontal">
                 <FontAwesomeIcon
                   icon={faMapLocation}
-                  className="me-2 text-secondary"
+                  className="me-2 mt-1 text-secondary"
                 />
                 {service.location}
-              </div>
+              </Stack>
             </div>
           </motion.div>
         ))}

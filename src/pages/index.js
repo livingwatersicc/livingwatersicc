@@ -36,7 +36,10 @@ export default function Home({ siteName }) {
             <FontAwesomeIcon icon={faClock} /> 5:00 PM – 6:45 PM
           </div>
           <div className="fw-light">
-            @ Church of Christ building (1 Saint Andrew Street, Dunedin)
+            @ Church of Christ building{" "}
+            <span className="text-nowrap">
+              (1 Saint Andrew Street, Dunedin)
+            </span>
           </div>
           <div className="mt-3">
             <Button as={Link} href="/services" variant="outline-dark">

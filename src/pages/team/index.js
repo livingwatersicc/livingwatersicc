@@ -12,7 +12,7 @@ const Team = ({ siteName }) => {
   return (
     <>
       <Head>
-        <title>Minters and Elders of {siteName}</title>
+        <title>Ministers and Elders of {siteName}</title>
       </Head>
       <Banner
         image={"bible.jpg"}
